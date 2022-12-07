@@ -1,7 +1,7 @@
 with open('input.txt') as f:
-    # need to find start of packet marker
-    # sequence of 4 characters that are all different
-    # sliding window of 4 chars
+    # need to find start of message marker
+    # sequence of 14 characters that are all different
+    # sliding window of 14 chars
     msg = f.read()
     idx = 0
     while idx < len(msg)-14:

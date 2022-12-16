@@ -23,8 +23,6 @@ with open('input.txt') as f:
                         coord_dict[(x, y)] = '#'
     
 # Fall sand
-count = 0
-
 def fall(coord_dict):
     x,y = 500, 0
     falling = True
@@ -56,5 +54,6 @@ while True:
     if coord == "BREAK":
         break
     coord_dict[coord] = 'o'
+
 # count source block too
 print(len(list(filter(lambda x: x=='o', coord_dict.values())))+1)
